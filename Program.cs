@@ -1,47 +1,34 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace MyApp
 {
-    public interface IAnimal
-    {
-        void makeSound();
-    }
 
-    public class Animal : IAnimal
-    {
-        public virtual void makeSound()
-        {
-            Console.WriteLine("Animal makes a sound");
-        }
-    }
-
-    public class Dog : Animal
-    {
-        public override void makeSound()
-        {
-            Console.WriteLine("Dog barks");
-        }
-    }
-
-    public class Cat : Animal
-    {
-        public override void makeSound()
-        {
-            Console.WriteLine("Cat meows");
-        }
-    }
     internal class Program
     {
-        static void Main(string[] args)
+        public async Task GetDataFromMultipleSourcesAsync()
         {
-            IAnimal myDog = new Dog();
-            IAnimal myCat = new Cat();
+            // Simulate fetching data from multiple sources asynchronously
+            await Task.Delay(1000); // Simulating delay
+            Console.WriteLine("Data fetched from multiple sources.");
+        }
 
-            myDog.makeSound(); // Output: Dog barks
-            myCat.makeSound(); // Output: Cat meows
+        public async Task DownloadDataAsync()
+        {
+            Console.WriteLine("Downloading data...");
+            await Task.Delay(5000); // Simulating delay
+            Console.WriteLine("Data downloaded successfully.");
+        }
 
-            Animal genericAnimal = new Animal();
-            genericAnimal.makeSound(); // Output: Animal makes a sound
+        static async Task Main(string[] args)
+        {
+            Program program = new Program();
+            Task.WhenAll(
+                program.GetDataFromMultipleSourcesAsync(),
+                program.DownloadDataAsync()
+            ).Wait(); // Wait for both tasks to complete
+            // await program.GetDataFromMultipleSourcesAsync();
+            // await program.DownloadDataAsync();
         }
     }
 }
