@@ -1,6 +1,41 @@
 @MyFirstApi_HostAddress = http://localhost:5096
 
-GET {{MyFirstApi_HostAddress}}/weatherforecast/
+GET {{MyFirstApi_HostAddress}}/api/products/
 Accept: application/json
 
 ###
+
+GET {{MyFirstApi_HostAddress}}/api/products/featured
+Accept: application/json
+
+###
+
+GET {{MyFirstApi_HostAddress}}/api/products/{id}
+Accept: application/json
+
+###
+
+POST {{MyFirstApi_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+    "name": "New Product",
+    "description": "Product Description",
+    "price": 99.99
+}
+
+###
+
+PUT {{MyFirstApi_HostAddress}}/api/products/{id}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Updated Product",
+    "description": "Updated Description",
+    "price": 149.99
+}
+
+###
+
+DELETE {{MyFirstApi_HostAddress}}/api/products/{id}
