@@ -1,4 +1,4 @@
-# AcmeGrocer Customer Prioritization System
+# AcmeDealership Customer Prioritization System
 
 A data-driven solution for car dealership customer prioritization using linear programming and ASP.NET Core Web API.
 
@@ -6,13 +6,13 @@ A data-driven solution for car dealership customer prioritization using linear p
 
 ```bash
 # Restore dependencies
-dotnet restore AcmeGrocer.csproj
+dotnet restore AcmeDealership.csproj
 
 # Build the project
-dotnet build AcmeGrocer.csproj
+dotnet build AcmeDealership.csproj
 
 # Run the application
-dotnet run --project AcmeGrocer.csproj
+dotnet run --project AcmeDealership.csproj
 ```
 
 The application will be available at: `http://localhost:5096`

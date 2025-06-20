@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using AcmeGrocer.Models;
+using AcmeDealership.Models;
 
-namespace AcmeGrocer.Data
+namespace AcmeDealership.Data
 {
     public class CustomerContext : DbContext
     {

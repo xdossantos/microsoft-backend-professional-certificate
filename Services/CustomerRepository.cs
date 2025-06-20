@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using AcmeGrocer.Data;
-using AcmeGrocer.Models;
+using AcmeDealership.Data;
+using AcmeDealership.Models;
 
-namespace AcmeGrocer.Services
+namespace AcmeDealership.Services
 {
     public interface ICustomerRepository
     {

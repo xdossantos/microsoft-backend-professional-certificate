@@ -1,6 +1,6 @@
-using AcmeGrocer.Models;
+using AcmeDealership.Models;
 
-namespace AcmeGrocer.Services
+namespace AcmeDealership.Services
 {
     public interface ICustomerScoringService
     {

@@ -1,4 +1,4 @@
-# AcmeGrocer Customer Prioritization System
+# AcmeDealership Customer Prioritization System
 
 ## 🚗 Business Problem
 A busy car dealership maintains a FIFO waitlist for test drive appointments, but sales associates waste significant time contacting unresponsive customers. This system creates an intelligent prioritization algorithm that increases the likelihood of reaching available customers in the first few calls.
@@ -62,17 +62,17 @@ We've implemented a comprehensive data-driven solution featuring:
 
 2. **Restore dependencies:**
    ```bash
-   dotnet restore AcmeGrocer.csproj
+   dotnet restore AcmeDealership.csproj
    ```
 
 3. **Build the project:**
    ```bash
-   dotnet build AcmeGrocer.csproj
+   dotnet build AcmeDealership.csproj
    ```
 
 4. **Run the application:**
    ```bash
-   dotnet run --project AcmeGrocer.csproj
+   dotnet run --project AcmeDealership.csproj
    ```
 
 5. **Access the application:**
@@ -111,10 +111,10 @@ Content-Type: application/json
 
 ### Using REST Client (customer-api-tests.http)
 ```http
-@AcmeGrocer_HostAddress = http://localhost:5096
+@AcmeDealership_HostAddress = http://localhost:5096
 
 ### Get customer recommendations for NYC
-POST {{AcmeGrocer_HostAddress}}/api/customers/recommendations
+POST {{AcmeDealership_HostAddress}}/api/customers/recommendations
 Content-Type: application/json
 
 {

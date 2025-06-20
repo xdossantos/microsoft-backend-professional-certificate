@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AcmeGrocer.Models.DTOs
+namespace AcmeDealership.Models.DTOs
 {
     public class FacilityLocationRequest
     {

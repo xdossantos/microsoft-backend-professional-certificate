@@ -1,4 +1,4 @@
-namespace AcmeGrocer.Models
+namespace AcmeDealership.Models
 {
     public class CustomerScore
     {

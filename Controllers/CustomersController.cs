@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using AcmeGrocer.Models;
-using AcmeGrocer.Models.DTOs;
-using AcmeGrocer.Services;
+using AcmeDealership.Models;
+using AcmeDealership.Models.DTOs;
+using AcmeDealership.Services;
 
-namespace AcmeGrocer.Controllers
+namespace AcmeDealership.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

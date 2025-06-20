@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AcmeGrocer.Models
+namespace AcmeDealership.Models
 {
     public class Customer
     {

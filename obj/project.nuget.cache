@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mg9gvVj23tc=",
+  "dgSpecHash": "uUTFmyGFNTE=",
   "success": true,
-  "projectFilePath": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeGrocer.csproj",
+  "projectFilePath": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeDealership.csproj",
   "expectedPackageFiles": [
     "/Users/xola.dos.santos/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/xola.dos.santos/.nuget/packages/microsoft.aspnetcore.openapi/9.0.6/microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using AcmeGrocer.Data;
-using AcmeGrocer.Services;
+using AcmeDealership.Data;
+using AcmeDealership.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .WriteTo.Console()
-    .WriteTo.File("logs/acme-grocer-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("logs/acme-dealership-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();
@@ -31,7 +31,7 @@ builder.Services.AddScoped<IDataSeedingService, DataSeedingService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "AcmeGrocer Customer API", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "AcmeDealership Customer API", Version = "v1" });
 });
 
 // Add CORS for development
@@ -53,7 +53,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AcmeGrocer Customer API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AcmeDealership Customer API v1");
         c.RoutePrefix = string.Empty; // Set Swagger UI as the root
     });
 }
@@ -84,6 +84,6 @@ app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
 
-Log.Information("AcmeGrocer Customer API is running...");
+Log.Information("AcmeDealership Customer API is running...");
 
 app.Run();

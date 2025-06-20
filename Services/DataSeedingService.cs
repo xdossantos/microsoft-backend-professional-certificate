@@ -1,8 +1,8 @@
 using System.Text.Json;
-using AcmeGrocer.Models;
-using AcmeGrocer.Services;
+using AcmeDealership.Models;
+using AcmeDealership.Services;
 
-namespace AcmeGrocer.Data
+namespace AcmeDealership.Data
 {
     public interface IDataSeedingService
     {

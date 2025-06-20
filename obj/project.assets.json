@@ -3926,9 +3926,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeGrocer.csproj",
-      "projectName": "AcmeGrocer",
-      "projectPath": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeGrocer.csproj",
+      "projectUniqueName": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeDealership.csproj",
+      "projectName": "AcmeDealership",
+      "projectPath": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/AcmeDealership.csproj",
       "packagesPath": "/Users/xola.dos.santos/.nuget/packages/",
       "outputPath": "/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/obj/",
       "projectStyle": "PackageReference",

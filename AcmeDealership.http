@@ -1,21 +1,21 @@
-@AcmeGrocer_HostAddress = http://localhost:5096
+@AcmeDealership_HostAddress = http://localhost:5096
 
-### AcmeGrocer Customer API Tests
+### AcmeDealership Customer API Tests
 
 ### Get all customers
-GET {{AcmeGrocer_HostAddress}}/api/customers
+GET {{AcmeDealership_HostAddress}}/api/customers
 Accept: application/json
 
 ###
 
 ### Get customer by ID (replace with actual ID from your data)
-GET {{AcmeGrocer_HostAddress}}/api/customers/541d25c9-9500-4265-8967-240f44ecf723
+GET {{AcmeDealership_HostAddress}}/api/customers/541d25c9-9500-4265-8967-240f44ecf723
 Accept: application/json
 
 ###
 
 ### Get customer recommendations for NYC location
-POST {{AcmeGrocer_HostAddress}}/api/customers/recommendations
+POST {{AcmeDealership_HostAddress}}/api/customers/recommendations
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 
 ### Get customer recommendations for Los Angeles location
-POST {{AcmeGrocer_HostAddress}}/api/customers/recommendations
+POST {{AcmeDealership_HostAddress}}/api/customers/recommendations
 Content-Type: application/json
 
 {
@@ -39,37 +39,37 @@ Content-Type: application/json
 ###
 
 ### Get customers by age range
-GET {{AcmeGrocer_HostAddress}}/api/customers/age-range?minAge=25&maxAge=45
+GET {{AcmeDealership_HostAddress}}/api/customers/age-range?minAge=25&maxAge=45
 Accept: application/json
 
 ###
 
 ### Get customer statistics
-GET {{AcmeGrocer_HostAddress}}/api/customers/statistics
+GET {{AcmeDealership_HostAddress}}/api/customers/statistics
 Accept: application/json
 
 ###
 
 ### Export customers (binary serialization)
-POST {{AcmeGrocer_HostAddress}}/api/customers/export
+POST {{AcmeDealership_HostAddress}}/api/customers/export
 Accept: application/json
 
 ###
 
 ### Export specific customer (binary serialization)
-POST {{AcmeGrocer_HostAddress}}/api/customers/export?customerId=541d25c9-9500-4265-8967-240f44ecf723
+POST {{AcmeDealership_HostAddress}}/api/customers/export?customerId=541d25c9-9500-4265-8967-240f44ecf723
 Accept: application/json
 
 ###
 
 ### Test error handling - Invalid customer ID
-GET {{AcmeGrocer_HostAddress}}/api/customers/invalid-id
+GET {{AcmeDealership_HostAddress}}/api/customers/invalid-id
 Accept: application/json
 
 ###
 
 ### Test validation - Invalid latitude
-POST {{AcmeGrocer_HostAddress}}/api/customers/recommendations
+POST {{AcmeDealership_HostAddress}}/api/customers/recommendations
 Content-Type: application/json
 
 {
@@ -81,7 +81,7 @@ Content-Type: application/json
 ###
 
 ### Test validation - Invalid count
-POST {{AcmeGrocer_HostAddress}}/api/customers/recommendations
+POST {{AcmeDealership_HostAddress}}/api/customers/recommendations
 Content-Type: application/json
 
 {
@@ -93,7 +93,7 @@ Content-Type: application/json
 ###
 
 ### Create new customer
-POST {{AcmeGrocer_HostAddress}}/api/customers
+POST {{AcmeDealership_HostAddress}}/api/customers
 Content-Type: application/json
 
 {
@@ -112,7 +112,7 @@ Content-Type: application/json
 ###
 
 ### Update customer
-PUT {{AcmeGrocer_HostAddress}}/api/customers/test-customer-123
+PUT {{AcmeDealership_HostAddress}}/api/customers/test-customer-123
 Content-Type: application/json
 
 {
@@ -131,5 +131,5 @@ Content-Type: application/json
 ###
 
 ### Delete customer
-DELETE {{AcmeGrocer_HostAddress}}/api/customers/test-customer-123
+DELETE {{AcmeDealership_HostAddress}}/api/customers/test-customer-123
 Accept: application/json
