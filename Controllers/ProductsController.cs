@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Collections.Generic;
 
-namespace MyFirstApi.Controllers
+namespace AcmeGrocer.Controllers
 
 {
 

@@ -1,0 +1,83 @@
+[2025-06-20 05:13:23.764 +02:00 INF] Starting to seed customers from /Users/xola.dos.santos/git/microsoft-backend-professional-certificate/sample-data/customers.json {"SourceContext":"AcmeGrocer.Data.DataSeedingService"}
+[2025-06-20 05:13:23.902 +02:00 INF] Added 1000 customers {"SourceContext":"AcmeGrocer.Services.CustomerRepository"}
+[2025-06-20 05:13:23.903 +02:00 INF] Successfully seeded 1000 customers {"SourceContext":"AcmeGrocer.Data.D2025-06-20 05:13:23.[2025-06-20 05:13:23.904 +02:00 INF] Application sta2025-06-20 05:13:23.9[2025-06-20 05:13:23.948 +02:00 INF] AcmeGrocer C2025-06-20 05:13:23.948 +02:0[2025-06-20 05:13:44.862 +02:00 ERR] An unhand2025-06-20 05:13:44.862 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file '/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/bin/Debug/net9.0/AcmeGrocer.xml'.
+File name: '/Users/xola.dos.santos/git/microsoft-backend-professional-certificate/bin/Debug/net9.0/AcmeGrocer.xml'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at Program.<>c.<<Main>$>b__0_1(SwaggerGenOptions c) in /Users/xola.dos.santos/git/microsoft-backend-professional-certificate/Program.cs:line 35
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method99(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-06-20 05:14:31.239 +02:00 INF] Starting to seed customers from /Users/xola.dos.santos/git/microsoft-backend-professional-certificate/sample-data/customers.json {"SourceContext":"AcmeGrocer.Data.DataSeedingService"}
+[2025-06-20 05:14:31.377 +02:00 INF] Added 1000 customers {"SourceContext":"AcmeGrocer.Services.CustomerRepository"}
+[2025-06-20 05:14:31.378 +02:00 INF] Successfully seeded 1000 customers {"SourceContext":"AcmeGrocer.Data.D2025-06-20 05:14:31.[2025-06-20 05:14:31.379 +02:00 INF] Application sta2025-06-20 05:14:31.3[2025-06-20 05:14:31.403 +02:00 INF] AcmeGrocer C2025-06-20 05:14:31.403 +02:0[2025-06-20 05:15:01.566 +02:00 INF] Starting 2025-06-20 05:15:01.566 +02:00 [INF] Starting customer scoring for facility at 40.7128, -74.006
+2025-06-20 05:15:01.599 +02:00 [INF] Successfully scored 1000 customers, returning top 5
+2025-06-20 05:15:01.601 +02:00 [INF] Returned 5 customer recommendations for facility at 40.7128, -74.006
+2025-06-20 05:16:17.909 +02:00 [INF] Successfully serialized customer 213097a3-cae1-48cf-b266-a361a972ff27 to /var/folders/ql/fngdnshs06xgbnjf1v7nr7t00000gn/T/customer_213097a3-cae1-48cf-b266-a361a972ff27_20250620_031617.dat
+2025-06-20 05:18:48.882 +02:00 [INF] Starting customer scoring for facility at 90, 180
+2025-06-20 05:18:48.888 +02:00 [INF] Successfully scored 1000 customers, returning top 50
+2025-06-20 05:18:48.890 +02:00 [INF] Returned 50 customer recommendations for facility at 90, 180
+2025-06-20 05:19:24.473 +02:00 [INF] Starting customer scoring for facility at 90, 180
+2025-06-20 05:19:24.485 +02:00 [INF] Successfully scored 1000 customers, returning top 5
+2025-06-20 05:19:24.486 +02:00 [INF] Returned 5 customer recommendations for facility at 90, 180
+r.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVG:00000001","RequestPath":"/api/customers/recommendations","ConnectionId":"0HNDFL2F74AVG"}
+[2025-06-20 05:16:17.909 +02:00 INF] Successfully serialized customer 213097a3-cae1-48cf-b266-a361a972ff27 to /var/folders/ql/fngdnshs06xgbnjf1v7nr7t00000gn/T/customer_213097a3-cae1-48cf-b266-a361a972ff27_20250620_031617.dat {"SourceContext":"AcmeGrocer.Services.BinarySerializationService","ActionId":"b7dc290f-4482-4226-89d4-bdb9c51dcc9c","ActionName":"AcmeGrocer.Controllers.CustomersController.ExportCustomers (AcmeGrocer)","RequestId":"0HNDFL2F74AVK:00000001","RequestPath":"/api/customers/export","ConnectionId":"0HNDFL2F74AVK"}
+[2025-06-20 05:18:48.882 +02:00 INF] Starting customer scoring for facility at 90, 180 {"SourceContext":"AcmeGrocer.Services.CustomerScoringService","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000004","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
+[2025-06-20 05:18:48.888 +02:00 INF] Successfully scored 1000 customers, returning top 50 {"SourceContext":"AcmeGrocer.Services.CustomerScoringService","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000004","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
+[2025-06-20 05:18:48.890 +02:00 INF] Returned 50 customer recommendations for facility at 90, 180 {"SourceContext":"AcmeGrocer.Controllers.CustomersController","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000004","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
+[2025-06-20 05:19:24.473 +02:00 INF] Starting customer scoring for facility at 90, 180 {"SourceContext":"AcmeGrocer.Services.CustomerScoringService","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000005","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
+[2025-06-20 05:19:24.485 +02:00 INF] Successfully scored 1000 customers, returning top 5 {"SourceContext":"AcmeGrocer.Services.CustomerScoringService","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000005","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
+[2025-06-20 05:19:24.486 +02:00 INF] Returned 5 customer recommendations for facility at 90, 180 {"SourceContext":"AcmeGrocer.Controllers.CustomersController","ActionId":"d654821d-ecae-440b-950f-32355531d38a","ActionName":"AcmeGrocer.Controllers.CustomersController.GetCustomerRecommendations (AcmeGrocer)","RequestId":"0HNDFL2F74AVM:00000005","RequestPath":"/api/Customers/recommendations","ConnectionId":"0HNDFL2F74AVM"}
